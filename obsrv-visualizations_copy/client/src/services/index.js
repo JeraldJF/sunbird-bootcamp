@@ -1,0 +1,10 @@
+
+
+export const fetchReport = () => {
+    return [{
+        "title": "report",
+        "reportid": "001",
+        "description": "xyz", "status": "Draft", "createdon": "2024-04-24 10:38:59.994907+00",
+        "reportconfig": { "files": [], "label": "report", "table": [{ "id": "obsrv", "name": "obsrv", "valuesExpr": "tableData", "columnsExpr": "keys", "downloadUrl": "/reports/fetch/hawk-eye/obsrv.csv" }], "title": "report", "charts": [{ "id": "obsrv", "colors": [{ "borderColor": "rgb(0, 199, 134)", "borderWidth": 2, "backgroundColor": "rgba(0, 199, 134, 0.3)" }, { "borderColor": "rgb(255, 161, 29)", "borderWidth": 2, "backgroundColor": "rgba(255, 161, 29, 0.3)" }, { "borderColor": "rgb(255, 69, 88)", "borderWidth": 2, "backgroundColor": "rgba(255, 69, 88, 0.3)" }, { "borderColor": "rgb(242, 203, 28)", "borderWidth": 2, "backgroundColor": "rgba(242, 203, 28, 0.3)" }, { "borderColor": "rgb(55, 70, 73)", "borderWidth": 2, "backgroundColor": "rgba(55, 70, 73, 0.3)" }], "options": { "title": { "text": "obsrv", "display": true, "fontSize": 16 }, "legend": { "display": false }, "scales": { "xAxes": [{ "scaleLabel": { "display": true, "labelString": "channel" } }], "yAxes": [{ "scaleLabel": { "display": true, "labelString": "total_count" } }] }, "tooltips": { "mode": "x-axis", "intersect": false, "bodySpacing": 5, "titleSpacing": 5 }, "responsive": true, "showLastUpdatedOn": true }, "datasets": [{ "label": "total_count", "dataExpr": "total_count" }], "chartType": "bar", "dataSource": { "ids": ["obsrv"], "commonDimension": "channel" }, "labelsExpr": "channel" }], "dataSource": [{ "id": "obsrv", "path": "/reports/fetch/hawk-eye/obsrv.json", "query": { "metric": "count", "dimension": "channel", "intervals": "1901-01-01T00:00:00+00:00/2101-01-01T00:00:00+00:00", "queryType": "topN", "threshold": 10000, "dataSource": "wikipedia", "granularity": "all", "aggregations": [{ "name": "count", "type": "count" }], "postAggregations": [] } }], "description": "report desc", "downloadUrl": "/reports/fetch/hawk-eye/obsrv.csv" }
+    }]
+}

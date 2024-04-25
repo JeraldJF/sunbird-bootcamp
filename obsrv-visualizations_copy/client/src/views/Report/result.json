@@ -1,0 +1,318 @@
+{
+  "title": "Flight Report Data",
+  "description": "Welcome to Random Flight Database, the ultimate companion for flight simulation enthusiasts on PC and consoles! Experience the excitement of discovering random flight routes that will take your virtual aviation adventures to new heights.",
+  "reportconfig": {
+    "files": [],
+    "label": "report",
+    "table": [
+      {
+        "id": "obsrv",
+        "name": "obsrv",
+        "valuesExpr": "tableData",
+        "columnsExpr": "keys",
+        "downloadUrl": "/reports/fetch/hawk-eye/obsrv.csv"
+      }
+    ],
+    "title": "report",
+    "charts": [
+        {
+            "id": "obsrv3",
+            "colors": [
+              {
+                "borderColor": "rgb(0, 199, 134)",
+                "borderWidth": 2,
+                "backgroundColor": "rgba(0, 199, 134, 0.3)"
+              },
+              {
+                "borderColor": "rgb(255, 161, 29)",
+                "borderWidth": 2,
+                "backgroundColor": "rgba(255, 161, 29, 0.3)"
+              },
+              {
+                "borderColor": "rgb(255, 69, 88)",
+                "borderWidth": 2,
+                "backgroundColor": "rgba(255, 69, 88, 0.3)"
+              },
+              {
+                "borderColor": "rgb(242, 203, 28)",
+                "borderWidth": 2,
+                "backgroundColor": "rgba(242, 203, 28, 0.3)"
+              },
+              {
+                "borderColor": "rgb(55, 70, 73)",
+                "borderWidth": 2,
+                "backgroundColor": "rgba(55, 70, 73, 0.3)"
+              }
+            ],
+            "options": {
+              "title": {
+                "text": "obsrv3",
+                "display": true,
+                "fontSize": 16
+              },
+              "legend": {
+                "display": false
+              },
+              "scales": {
+                "xAxes": [
+                  {
+                    "scaleLabel": {
+                      "display": true,
+                      "labelString": "channel"
+                    }
+                  }
+                ],
+                "yAxes": [
+                  {
+                    "scaleLabel": {
+                      "display": true,
+                      "labelString": "total_count"
+                    }
+                  }
+                ]
+              },
+              "tooltips": {
+                "mode": "x-axis",
+                "intersect": false,
+                "bodySpacing": 5,
+                "titleSpacing": 5
+              },
+              "responsive": true,
+              "showLastUpdatedOn": true
+            },
+            "datasets": [
+              {
+                "label": "total_count",
+                "dataExpr": "total_count"
+              }
+            ],
+            "chartType": "bigNumber",
+            "dataSource": {
+              "ids": ["obsrv3"],
+              "commonDimension": "channel"
+            },
+            "labelsExpr": "channel"
+          },
+      {
+        "id": "obsrv",
+        "colors": [
+          {
+            "borderColor": "rgb(0, 199, 134)",
+            "borderWidth": 2,
+            "backgroundColor": "rgba(0, 199, 134, 0.3)"
+          },
+          {
+            "borderColor": "rgb(255, 161, 29)",
+            "borderWidth": 2,
+            "backgroundColor": "rgba(255, 161, 29, 0.3)"
+          },
+          {
+            "borderColor": "rgb(255, 69, 88)",
+            "borderWidth": 2,
+            "backgroundColor": "rgba(255, 69, 88, 0.3)"
+          },
+          {
+            "borderColor": "rgb(242, 203, 28)",
+            "borderWidth": 2,
+            "backgroundColor": "rgba(242, 203, 28, 0.3)"
+          },
+          {
+            "borderColor": "rgb(55, 70, 73)",
+            "borderWidth": 2,
+            "backgroundColor": "rgba(55, 70, 73, 0.3)"
+          }
+        ],
+        "options": {
+          "title": {
+            "text": "obsrv",
+            "display": true,
+            "fontSize": 16
+          },
+          "legend": {
+            "display": false
+          },
+          "scales": {
+            "xAxes": [
+              {
+                "scaleLabel": {
+                  "display": true,
+                  "labelString": "channel"
+                }
+              }
+            ],
+            "yAxes": [
+              {
+                "scaleLabel": {
+                  "display": true,
+                  "labelString": "total_count"
+                }
+              }
+            ]
+          },
+          "tooltips": {
+            "mode": "x-axis",
+            "intersect": false,
+            "bodySpacing": 5,
+            "titleSpacing": 5
+          },
+          "responsive": true,
+          "showLastUpdatedOn": true
+        },
+        "datasets": [
+          {
+            "label": "total_count",
+            "dataExpr": "total_count"
+          }
+        ],
+        "chartType": "bar",
+        "dataSource": {
+          "ids": ["obsrv"],
+          "commonDimension": "channel"
+        },
+        "labelsExpr": "channel"
+      },
+      {
+        "id": "obsrv1",
+        "colors": [
+          {
+            "borderColor": "rgb(0, 199, 134)",
+            "borderWidth": 2,
+            "backgroundColor": "rgba(0, 199, 134, 0.3)"
+          },
+          {
+            "borderColor": "rgb(255, 161, 29)",
+            "borderWidth": 2,
+            "backgroundColor": "rgba(255, 161, 29, 0.3)"
+          },
+          {
+            "borderColor": "rgb(255, 69, 88)",
+            "borderWidth": 2,
+            "backgroundColor": "rgba(255, 69, 88, 0.3)"
+          },
+          {
+            "borderColor": "rgb(242, 203, 28)",
+            "borderWidth": 2,
+            "backgroundColor": "rgba(242, 203, 28, 0.3)"
+          },
+          {
+            "borderColor": "rgb(55, 70, 73)",
+            "borderWidth": 2,
+            "backgroundColor": "rgba(55, 70, 73, 0.3)"
+          }
+        ],
+        "options": {
+          "title": {
+            "text": "obsrv1",
+            "display": true,
+            "fontSize": 16
+          },
+          "legend": {
+            "display": false
+          },
+          "scales": {
+            "xAxes": [
+              {
+                "scaleLabel": {
+                  "display": true,
+                  "labelString": "channel"
+                }
+              }
+            ],
+            "yAxes": [
+              {
+                "scaleLabel": {
+                  "display": true,
+                  "labelString": "total_count"
+                }
+              }
+            ]
+          },
+          "tooltips": {
+            "mode": "x-axis",
+            "intersect": false,
+            "bodySpacing": 5,
+            "titleSpacing": 5
+          },
+          "responsive": true,
+          "showLastUpdatedOn": true
+        },
+        "datasets": [
+          {
+            "label": "total_count",
+            "dataExpr": "total_count"
+          }
+        ],
+        "chartType": "line",
+        "dataSource": {
+          "ids": ["obsrv1"],
+          "commonDimension": "channel"
+        },
+        "labelsExpr": "channel"
+      }
+    ],
+    "dataSource": [
+      {
+        "id": "obsrv3",
+        "path": "/reports/fetch/hawk-eye/obsrv.json",
+        "query": {
+          "metric": "total_count",
+          "dimension": "channel",
+          "intervals": "1901-01-01T00:00:00+00:00/2101-01-01T00:00:00+00:00",
+          "queryType": "topN",
+          "threshold": 10000,
+          "dataSource": "wikipedia",
+          "granularity": "all",
+          "aggregations": [
+            {
+              "name": "total_count",
+              "type": "count"
+            }
+          ],
+          "postAggregations": []
+        }
+      },
+      {
+        "id": "obsrv",
+        "path": "/reports/fetch/hawk-eye/obsrv.json",
+        "query": {
+          "metric": "total_count",
+          "dimension": "channel",
+          "intervals": "1901-01-01T00:00:00+00:00/2101-01-01T00:00:00+00:00",
+          "queryType": "topN",
+          "threshold": 10000,
+          "dataSource": "wikipedia",
+          "granularity": "all",
+          "aggregations": [
+            {
+              "name": "total_count",
+              "type": "count"
+            }
+          ],
+          "postAggregations": []
+        }
+      },
+      {
+        "id": "obsrv1",
+        "path": "/reports/fetch/hawk-eye/obsrv.json",
+        "query": {
+          "metric": "total_count",
+          "dimension": "channel",
+          "intervals": "1901-01-01T00:00:00+00:00/2101-01-01T00:00:00+00:00",
+          "queryType": "topN",
+          "threshold": 10000,
+          "dataSource": "wikipedia",
+          "granularity": "all",
+          "aggregations": [
+            {
+              "name": "total_count",
+              "type": "count"
+            }
+          ],
+          "postAggregations": []
+        }
+      }
+    ],
+    "description": "report desc",
+    "downloadUrl": "/reports/fetch/hawk-eye/obsrv.csv"
+  }
+}
